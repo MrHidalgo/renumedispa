@@ -1,19 +1,17 @@
 const Common = (function() {
   const pressESC = () => {
-    $(document).on('keyup', function(e){
+    document.addEventListener('keyup', (e) => {
       if (e.keyCode === 27) {
-      
+        /* action */
       }
     });
   };
 
   const clickBody = () => {
-    $('body').on('click', (ev) => {
+    document.body.addEventListener('click', (ev) => {
       const className = `.pre-footer__box, .main__form, .main__search`;
 
-      if (!$(ev.target).closest(className).length) {
-      
-      }
+      if (!(ev.target).closest(className).length) {}
     });
   };
 

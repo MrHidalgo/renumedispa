@@ -1,5 +1,7 @@
 import Common from "./common/common";
 
+import SwiperCB from "./macros/swiper";
+
 // EVENT LISTENER - LOAD
 // ========================================
 window.addEventListener('load', (ev) => {
@@ -7,6 +9,7 @@ window.addEventListener('load', (ev) => {
   Common.initLoad();
   
   // MACROS
+  SwiperCB.init();
   
 }, false);
 

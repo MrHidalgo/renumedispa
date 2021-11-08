@@ -7,7 +7,7 @@
 }
 
 /* line 21, src/scss/_utilities/_extend.scss */
-.category__box-img {
+.main .swiper-slide img, .category__box-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -544,6 +544,172 @@ picture {
 /* line 155, src/scss/_components/common/_footer.scss */
 .footer__social a:hover {
   background-color: #464648;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 3, src/scss/_components/homepage/main.scss */
+.main {
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/homepage/main.scss */
+  .main {
+    padding-bottom: 15px;
+  }
+}
+
+/* line 9, src/scss/_components/homepage/main.scss */
+.main__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 600px;
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 9, src/scss/_components/homepage/main.scss */
+  .main__wrapper {
+    min-height: 550px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 9, src/scss/_components/homepage/main.scss */
+  .main__wrapper {
+    min-height: 450px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 9, src/scss/_components/homepage/main.scss */
+  .main__wrapper {
+    min-height: 275px;
+  }
+}
+
+/* line 23, src/scss/_components/homepage/main.scss */
+.main__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 29, src/scss/_components/homepage/main.scss */
+.main .swiper {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 33, src/scss/_components/homepage/main.scss */
+.main .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+/* line 38, src/scss/_components/homepage/main.scss */
+.main .swiper-slide h1 {
+  z-index: 5;
+  position: relative;
+  width: 50%;
+  padding-right: 30px;
+  margin-left: auto;
+  font-size: 80px;
+  font-weight: 700;
+  color: #ffffff;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 38, src/scss/_components/homepage/main.scss */
+  .main .swiper-slide h1 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 38, src/scss/_components/homepage/main.scss */
+  .main .swiper-slide h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 38, src/scss/_components/homepage/main.scss */
+  .main .swiper-slide h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 38, src/scss/_components/homepage/main.scss */
+  .main .swiper-slide h1 {
+    font-size: 35px;
+  }
+}
+
+/* line 63, src/scss/_components/homepage/main.scss */
+.main .swiper-slide.swiper-slide-active img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: -webkit-filter 0.3s ease-in-out;
+  transition: -webkit-filter 0.3s ease-in-out;
+  -o-transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+}
+
+/* line 69, src/scss/_components/homepage/main.scss */
+.main .swiper-slide img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: -webkit-filter 0.3s ease-in-out;
+  transition: -webkit-filter 0.3s ease-in-out;
+  -o-transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+}
+
+/* line 76, src/scss/_components/homepage/main.scss */
+.main .swiper-pagination {
+  z-index: 10;
+  bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 83, src/scss/_components/homepage/main.scss */
+.main .swiper-pagination-bullet {
+  width: 60px;
+  height: 3px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background-color: rgba(204, 204, 204, 0.5);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 92, src/scss/_components/homepage/main.scss */
+.main .swiper-pagination-bullet-active {
+  background-color: #cccccc;
   -webkit-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;

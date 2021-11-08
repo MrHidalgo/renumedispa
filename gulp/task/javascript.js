@@ -7,7 +7,7 @@ const configPath  = require('../config/configPath'),
   configOption  = require('../config/configOption');
 
 
-const _javascriptGulpTask = (_src, _entryAppPath, _entryAppFiles, _dest) => {
+const _javascriptGulpTask = (_src, _entryAppFiles, _dest) => {
   return src(_src)
     .pipe(plumber(configOption.pipeBreaking.err))
     .pipe(webpack({
@@ -38,7 +38,6 @@ const _javascriptGulpTask = (_src, _entryAppPath, _entryAppFiles, _dest) => {
 
 task('js', (cb) => _javascriptGulpTask(
   configPath.src.js + '/*.js',
-  './src/js',
   {
     app: './src/js/app.js',
   },
