@@ -31,24 +31,30 @@ header#header.header
             a.logo__btn(href="#")
               img.logo__img(src='img/logo--footer.png' alt='')
 
-        div
+          +hamburger()
+
+        div(mobile-block-js)
+
+          .header__close
+            a(href="#" menu-close-js)
+              i.fas.fa-times
 
           nav.header__menu
             .header__menu-container.header__menu-container--small
-              a.header__menu-item(href="#")
+              a.header__menu-item(href="#" header-item-js)
                 span About
                 i.fas.fa-chevron-down
-              .header__menu-dropdown
+              .header__menu-dropdown(header-dropdown-js)
                 a(href="#") Why Renu
                 a(href="#") Reviews
                 a(href="#") Staff
                 a(href="#") Renu Policies
                 a(href="#") Blog
             .header__menu-container.header__menu-container--full
-              a.header__menu-item(href="#")
+              a.header__menu-item(href="#" header-item-js)
                 span Services
                 i.fas.fa-chevron-down
-              .header__menu-dropdown
+              .header__menu-dropdown(header-dropdown-js)
                 .c-grid
                   div
                     p.header__menu-title Injectables
@@ -99,34 +105,34 @@ header#header.header
                     a(href="#") EpiBlade Dermal Leveling
                     a(href="#") Renu Custom Facials
             .header__menu-container.header__menu-container--small
-              a.header__menu-item(href="#")
+              a.header__menu-item(href="#" header-item-js)
                 span Health & Vitality
                 i.fas.fa-chevron-down
-              .header__menu-dropdown
+              .header__menu-dropdown(header-dropdown-js)
                 a(href="#") Intimate Wellness
             .header__menu-container.header__menu-container--small
-              a.header__menu-item(href="#")
+              a.header__menu-item(href="#" header-item-js)
                 span Men
                 i.fas.fa-chevron-down
-              .header__menu-dropdown
-                a(href="#")
+              .header__menu-dropdown(header-dropdown-js)
+                a(href="#" header-subitem-js)
                   span Refresh & Repair
                   i.fas.fa-chevron-right
-                  .header__menu-subdropdown
+                  .header__menu-subdropdown(header-subdropdown-js)
                     button(type='button') Brotox
                     button(type='button') Ultherapy
                     button(type='button') Halo X
-                a(href="#")
+                a(href="#" header-subitem-js)
                   span Restore And Refine
                   i.fas.fa-chevron-right
-                  .header__menu-subdropdown
+                  .header__menu-subdropdown(header-subdropdown-js)
                     button(type='button') Radiesse
                     button(type='button') Sculptra
                     button(type='button') Restylane
-                a(href="#")
+                a(href="#" header-subitem-js)
                   span Resculpt and Refuel
                   i.fas.fa-chevron-right
-                  .header__menu-subdropdown
+                  .header__menu-subdropdown(header-subdropdown-js)
                     button(type='button') CoolSculpting
                     button(type='button') CoolTone
                     button(type='button') Kybella
@@ -136,6 +142,20 @@ header#header.header
             .header__menu-container.header__menu-container--small
               a.header__menu-item(href="#")
                 span Appointments
+
+          ul.header__social
+            li
+              a(href="#")
+                i.fab.fa-facebook-f
+            li
+              a(href="#")
+                i.fab.fa-twitter
+            li
+              a(href="#")
+                i.fab.fa-pinterest-p
+            li
+              a(href="#")
+                i.fab.fa-instagram
 
         div
 

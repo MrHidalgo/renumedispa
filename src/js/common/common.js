@@ -9,7 +9,7 @@ const Common = (function() {
 
   const clickBody = () => {
     document.body.addEventListener('click', (ev) => {
-      const className = `.pre-footer__box, .main__form, .main__search`;
+      const className = ``;
 
       if (!(ev.target).closest(className).length) {}
     });
@@ -29,8 +29,8 @@ const Common = (function() {
 
   const initEventListeners = function() {};
   const initLoad = function() {
-    pressESC();
-    clickBody();
+    // pressESC();
+    // clickBody();
     preventBehavior();
   };
   return {

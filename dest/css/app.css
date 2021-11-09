@@ -30,6 +30,160 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+/* line 3, src/scss/_vendor/hamburger/_base.scss */
+.hamburger {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-transition-property: opacity, -webkit-filter;
+  transition-property: opacity, -webkit-filter;
+  -o-transition-property: opacity, filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  -webkit-transition-duration: 0.35s;
+       -o-transition-duration: 0.35s;
+          transition-duration: 0.35s;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+/* line 21, src/scss/_vendor/hamburger/_base.scss */
+.hamburger:hover {
+  opacity: 1;
+}
+
+/* line 31, src/scss/_vendor/hamburger/_base.scss */
+.hamburger-box {
+  width: 35px;
+  height: 19px;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 38, src/scss/_vendor/hamburger/_base.scss */
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -1.5px;
+}
+
+/* line 43, src/scss/_vendor/hamburger/_base.scss */
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.15s;
+       -o-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+/* line 56, src/scss/_vendor/hamburger/_base.scss */
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+/* line 62, src/scss/_vendor/hamburger/_base.scss */
+.hamburger-inner::before {
+  top: -8px;
+}
+
+/* line 66, src/scss/_vendor/hamburger/_base.scss */
+.hamburger-inner::after {
+  bottom: -8px;
+}
+
+/*
+   * Squeeze
+   */
+/* line 6, src/scss/_vendor/hamburger/types/_squeeze.scss */
+.hamburger--squeeze .hamburger-inner {
+  -webkit-transition-duration: 0.075s;
+       -o-transition-duration: 0.075s;
+          transition-duration: 0.075s;
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+       -o-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+/* line 10, src/scss/_vendor/hamburger/types/_squeeze.scss */
+.hamburger--squeeze .hamburger-inner::before {
+  -webkit-transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+  -o-transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+
+/* line 15, src/scss/_vendor/hamburger/types/_squeeze.scss */
+.hamburger--squeeze .hamburger-inner::after {
+  -webkit-transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -o-transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+/* line 22, src/scss/_vendor/hamburger/types/_squeeze.scss */
+.hamburger--squeeze.is-active .hamburger-inner {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition-delay: 0.12s;
+       -o-transition-delay: 0.12s;
+          transition-delay: 0.12s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+       -o-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* line 27, src/scss/_vendor/hamburger/types/_squeeze.scss */
+.hamburger--squeeze.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  -webkit-transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+  -o-transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+
+/* line 34, src/scss/_vendor/hamburger/types/_squeeze.scss */
+.hamburger--squeeze.is-active .hamburger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
 html,
 body {
@@ -559,22 +713,27 @@ picture {
 }
 
 /* line 10, src/scss/_components/common/_header.scss */
+.is-hideScroll .header {
+  top: 0;
+}
+
+/* line 14, src/scss/_components/common/_header.scss */
 .header__container {
   width: 100%;
 }
 
-/* line 13, src/scss/_components/common/_header.scss */
+/* line 17, src/scss/_components/common/_header.scss */
 .header__container-1 {
   background-color: #190b1f;
 }
 
-/* line 17, src/scss/_components/common/_header.scss */
+/* line 21, src/scss/_components/common/_header.scss */
 .header__container-2 {
   position: relative;
   background-color: #000000;
 }
 
-/* line 24, src/scss/_components/common/_header.scss */
+/* line 28, src/scss/_components/common/_header.scss */
 .header__wrapper-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,7 +747,15 @@ picture {
   min-height: 50px;
 }
 
-/* line 30, src/scss/_components/common/_header.scss */
+@media screen and (max-width: 767px) {
+  /* line 28, src/scss/_components/common/_header.scss */
+  .header__wrapper-1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/* line 38, src/scss/_components/common/_header.scss */
 .header__wrapper-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,13 +766,43 @@ picture {
   min-height: 80px;
 }
 
-/* line 36, src/scss/_components/common/_header.scss */
+/* line 44, src/scss/_components/common/_header.scss */
 .header__wrapper-2 > div:nth-of-type(1), .header__wrapper-2 > div:nth-of-type(3) {
   width: 100%;
   max-width: 201px;
 }
 
-/* line 42, src/scss/_components/common/_header.scss */
+@media screen and (max-width: 1279px) {
+  /* line 50, src/scss/_components/common/_header.scss */
+  .header__wrapper-2 > div:nth-of-type(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 100%;
+  }
+}
+
+/* line 58, src/scss/_components/common/_header.scss */
+.header__wrapper-2 > div:nth-of-type(1) .hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 58, src/scss/_components/common/_header.scss */
+  .header__wrapper-2 > div:nth-of-type(1) .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 66, src/scss/_components/common/_header.scss */
 .header__wrapper-2 > div:nth-of-type(2) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,7 +817,87 @@ picture {
   max-width: 100%;
 }
 
-/* line 53, src/scss/_components/common/_header.scss */
+@media screen and (max-width: 1279px) {
+  /* line 66, src/scss/_components/common/_header.scss */
+  .header__wrapper-2 > div:nth-of-type(2) {
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+  /* line 83, src/scss/_components/common/_header.scss */
+  .header__wrapper-2 > div:nth-of-type(2).is-open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  /* line 88, src/scss/_components/common/_header.scss */
+  .header__wrapper-2 > div:nth-of-type(2).is-open .header__menu {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  /* line 94, src/scss/_components/common/_header.scss */
+  .header__wrapper-2 > div:nth-of-type(2).is-animate {
+    -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  /* line 97, src/scss/_components/common/_header.scss */
+  .header__wrapper-2 > div:nth-of-type(2).is-animate .header__menu {
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+}
+
+/* line 103, src/scss/_components/common/_header.scss */
+.header__wrapper-2 > div:nth-of-type(2) .header__social {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  background-color: #000000;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 103, src/scss/_components/common/_header.scss */
+  .header__wrapper-2 > div:nth-of-type(2) .header__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 120, src/scss/_components/common/_header.scss */
+  .header__wrapper-2 > div:nth-of-type(3) {
+    display: none;
+  }
+}
+
+/* line 129, src/scss/_components/common/_header.scss */
 .header__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,13 +912,27 @@ picture {
   font-weight: 500;
 }
 
-/* line 60, src/scss/_components/common/_header.scss */
+@media screen and (max-width: 767px) {
+  /* line 129, src/scss/_components/common/_header.scss */
+  .header__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 138, src/scss/_components/common/_header.scss */
+  .header__contacts span {
+    display: none;
+  }
+}
+
+/* line 143, src/scss/_components/common/_header.scss */
 .header__contacts a,
 .header__contacts p {
   color: #ffffff;
 }
 
-/* line 65, src/scss/_components/common/_header.scss */
+/* line 148, src/scss/_components/common/_header.scss */
 .header__contacts a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -651,19 +942,19 @@ picture {
           align-items: center;
 }
 
-/* line 69, src/scss/_components/common/_header.scss */
+/* line 152, src/scss/_components/common/_header.scss */
 .header__contacts a svg {
   margin-right: 5px;
 }
 
-/* line 74, src/scss/_components/common/_header.scss */
+/* line 157, src/scss/_components/common/_header.scss */
 .header__contacts span {
   margin-left: 10px;
   margin-right: 10px;
   color: #ffffff;
 }
 
-/* line 81, src/scss/_components/common/_header.scss */
+/* line 164, src/scss/_components/common/_header.scss */
 .header__social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -674,7 +965,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 81, src/scss/_components/common/_header.scss */
+  /* line 164, src/scss/_components/common/_header.scss */
   .header__social {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -682,12 +973,12 @@ picture {
   }
 }
 
-/* line 89, src/scss/_components/common/_header.scss */
+/* line 172, src/scss/_components/common/_header.scss */
 .header__social li:not(:last-of-type) {
   margin-right: 7px;
 }
 
-/* line 94, src/scss/_components/common/_header.scss */
+/* line 177, src/scss/_components/common/_header.scss */
 .header__social a {
   outline: none;
   display: -webkit-box;
@@ -710,7 +1001,57 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 109, src/scss/_components/common/_header.scss */
+/* line 192, src/scss/_components/common/_header.scss */
+.header__close {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  max-width: 320px;
+  height: 50px;
+  padding: 0 10px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background-color: #000;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 192, src/scss/_components/common/_header.scss */
+  .header__close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 211, src/scss/_components/common/_header.scss */
+.header__close a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 216, src/scss/_components/common/_header.scss */
+.header__close a svg {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* line 223, src/scss/_components/common/_header.scss */
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -720,60 +1061,128 @@ picture {
           align-items: center;
 }
 
-/* line 115, src/scss/_components/common/_header.scss */
-.header__menu-container.header__menu-container--full .c-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (max-width: 1279px) {
+  /* line 223, src/scss/_components/common/_header.scss */
+  .header__menu {
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 45px;
+    border-left: 1px solid #fff;
+    background-color: #000000;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+  }
 }
 
-/* line 118, src/scss/_components/common/_header.scss */
-.header__menu-container.header__menu-container--full .c-grid > div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-width: 1px;
-  max-width: 100%;
+@media screen and (max-width: 1279px) {
+  /* line 243, src/scss/_components/common/_header.scss */
+  .header__menu-container {
+    width: 100%;
+  }
+  /* line 247, src/scss/_components/common/_header.scss */
+  .header__menu-container:not(:last-of-type) {
+    border-bottom: 1px solid #fff;
+  }
 }
 
-/* line 126, src/scss/_components/common/_header.scss */
-.header__menu-container.header__menu-container--full .header__menu-dropdown {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-top: 1px solid #fff;
+@media screen and (min-width: 1280px) {
+  /* line 254, src/scss/_components/common/_header.scss */
+  .header__menu-container.header__menu-container--full .c-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* line 257, src/scss/_components/common/_header.scss */
+  .header__menu-container.header__menu-container--full .c-grid > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    min-width: 1px;
+    max-width: 100%;
+  }
+  /* line 265, src/scss/_components/common/_header.scss */
+  .header__menu-container.header__menu-container--full .header__menu-dropdown {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #fff;
+  }
 }
 
-/* line 133, src/scss/_components/common/_header.scss */
-.header__menu-container.header__menu-container--small {
-  position: relative;
+@media screen and (max-width: 1279px) {
+  /* line 273, src/scss/_components/common/_header.scss */
+  .header__menu-container.header__menu-container--full .c-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  /* line 279, src/scss/_components/common/_header.scss */
+  .header__menu-container.header__menu-container--full .c-grid > div:not(:last-of-type) {
+    padding-bottom: 15px;
+  }
+  /* line 283, src/scss/_components/common/_header.scss */
+  .header__menu-container.header__menu-container--full .c-grid > div > p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  /* line 290, src/scss/_components/common/_header.scss */
+  .header__menu-container.header__menu-container--full .c-grid > div > a {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
-/* line 136, src/scss/_components/common/_header.scss */
-.header__menu-container.header__menu-container--small .header__menu-dropdown {
-  width: 100%;
-  max-width: 290px;
-  min-width: 290px;
+@media screen and (min-width: 1280px) {
+  /* line 298, src/scss/_components/common/_header.scss */
+  .header__menu-container.header__menu-container--small {
+    position: relative;
+  }
+  /* line 302, src/scss/_components/common/_header.scss */
+  .header__menu-container.header__menu-container--small .header__menu-dropdown {
+    width: 100%;
+    max-width: 290px;
+    min-width: 290px;
+  }
 }
 
-/* line 145, src/scss/_components/common/_header.scss */
-.header__menu-container:hover .header__menu-item {
-  background-color: #dadc56;
-  color: #000000;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+@media screen and (min-width: 1280px) {
+  /* line 313, src/scss/_components/common/_header.scss */
+  .header__menu-container:hover .header__menu-item {
+    background-color: #dadc56;
+    color: #000000;
+    -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  /* line 318, src/scss/_components/common/_header.scss */
+  .header__menu-container:hover .header__menu-dropdown {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
 }
 
-/* line 150, src/scss/_components/common/_header.scss */
-.header__menu-container:hover .header__menu-dropdown {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-/* line 159, src/scss/_components/common/_header.scss */
+/* line 328, src/scss/_components/common/_header.scss */
 .header__menu-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -795,13 +1204,47 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 172, src/scss/_components/common/_header.scss */
+@media screen and (max-width: 1279px) {
+  /* line 328, src/scss/_components/common/_header.scss */
+  .header__menu-item {
+    min-height: 50px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  /* line 344, src/scss/_components/common/_header.scss */
+  .header__menu-item.is-active svg {
+    -webkit-transform: scale(-1);
+        -ms-transform: scale(-1);
+            transform: scale(-1);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  /* line 350, src/scss/_components/common/_header.scss */
+  .header__menu-item:hover {
+    background-color: #dadc56;
+    color: #000000;
+    -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+}
+
+/* line 358, src/scss/_components/common/_header.scss */
 .header__menu-item span + svg {
   margin-left: 5px;
   font-size: 12px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 179, src/scss/_components/common/_header.scss */
+/* line 366, src/scss/_components/common/_header.scss */
 .header__menu-dropdown {
   z-index: 999;
   opacity: 0;
@@ -823,7 +1266,24 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 192, src/scss/_components/common/_header.scss */
+@media screen and (max-width: 1279px) {
+  /* line 366, src/scss/_components/common/_header.scss */
+  .header__menu-dropdown {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    display: none;
+  }
+  /* line 384, src/scss/_components/common/_header.scss */
+  .header__menu-dropdown.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: 1px solid #fff;
+  }
+}
+
+/* line 390, src/scss/_components/common/_header.scss */
 .header__menu-dropdown a,
 .header__menu-dropdown button {
   cursor: pointer;
@@ -854,14 +1314,52 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 213, src/scss/_components/common/_header.scss */
+@media screen and (max-width: 1279px) {
+  /* line 410, src/scss/_components/common/_header.scss */
+  .header__menu-dropdown a[header-subitem-js],
+  .header__menu-dropdown button[header-subitem-js] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  /* line 417, src/scss/_components/common/_header.scss */
+  .header__menu-dropdown a[header-subitem-js] > span,
+  .header__menu-dropdown button[header-subitem-js] > span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    min-height: 40px;
+  }
+  /* line 425, src/scss/_components/common/_header.scss */
+  .header__menu-dropdown a[header-subitem-js] > svg,
+  .header__menu-dropdown button[header-subitem-js] > svg {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+  }
+}
+
+/* line 434, src/scss/_components/common/_header.scss */
 .header__menu-dropdown a span + svg,
 .header__menu-dropdown button span + svg {
   margin-left: 5px;
   font-size: 12px;
 }
 
-/* line 219, src/scss/_components/common/_header.scss */
+/* line 440, src/scss/_components/common/_header.scss */
 .header__menu-dropdown a:hover,
 .header__menu-dropdown button:hover {
   background-color: #dadc56;
@@ -871,17 +1369,19 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 224, src/scss/_components/common/_header.scss */
-.header__menu-dropdown a:hover .header__menu-subdropdown,
-.header__menu-dropdown button:hover .header__menu-subdropdown {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+@media screen and (min-width: 1280px) {
+  /* line 445, src/scss/_components/common/_header.scss */
+  .header__menu-dropdown a:hover .header__menu-subdropdown,
+  .header__menu-dropdown button:hover .header__menu-subdropdown {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
 }
 
-/* line 233, src/scss/_components/common/_header.scss */
+/* line 455, src/scss/_components/common/_header.scss */
 .header__menu-title {
   padding: 0 15px 15px;
   font-size: 16px;
@@ -890,7 +1390,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 241, src/scss/_components/common/_header.scss */
+/* line 463, src/scss/_components/common/_header.scss */
 .header__menu-subdropdown {
   z-index: 99;
   opacity: 0;
@@ -912,6 +1412,27 @@ picture {
   -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 463, src/scss/_components/common/_header.scss */
+  .header__menu-subdropdown {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(100% + 30px);
+    min-width: calc(100% + 30px);
+    max-width: calc(100% + 30px);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  /* line 489, src/scss/_components/common/_header.scss */
+  .header__menu-subdropdown > button {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 /* line 4, src/scss/_components/homepage/category.scss */

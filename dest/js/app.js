@@ -97,6 +97,8 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common/common */ "./src/js/common/common.js");
 /* harmony import */ var _macros_swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./macros/swiper */ "./src/js/macros/swiper.js");
+/* harmony import */ var _macros_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./macros/header */ "./src/js/macros/header.js");
+
 
  // EVENT LISTENER - LOAD
 // ========================================
@@ -106,6 +108,7 @@ window.addEventListener('load', function (ev) {
   _common_common__WEBPACK_IMPORTED_MODULE_0__["default"].initLoad(); // MACROS
 
   _macros_swiper__WEBPACK_IMPORTED_MODULE_1__["default"].init();
+  _macros_header__WEBPACK_IMPORTED_MODULE_2__["default"].init();
 }, false); // EVENT LISTENER - SCROLL
 // ========================================
 
@@ -133,7 +136,7 @@ var Common = function () {
 
   var clickBody = function clickBody() {
     document.body.addEventListener('click', function (ev) {
-      var className = ".pre-footer__box, .main__form, .main__search";
+      var className = "";
 
       if (!ev.target.closest(className).length) {}
     });
@@ -153,8 +156,8 @@ var Common = function () {
   var initEventListeners = function initEventListeners() {};
 
   var initLoad = function initLoad() {
-    pressESC();
-    clickBody();
+    // pressESC();
+    // clickBody();
     preventBehavior();
   };
 
@@ -164,6 +167,77 @@ var Common = function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (Common);
+
+/***/ }),
+
+/***/ "./src/js/macros/header.js":
+/*!*********************************!*\
+  !*** ./src/js/macros/header.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var HeaderCB = function () {
+  var hamburgerToggle = function hamburgerToggle() {
+    var btn = document.querySelector("[hamburger-js]"),
+        btnClose = document.querySelectorAll('[menu-close-js]'),
+        hideScrollContainer = document.querySelectorAll("html, body"),
+        mobileContainer = document.querySelector("[mobile-block-js]");
+    btn.addEventListener("click", function (ev) {
+      var elem = ev.currentTarget;
+      elem.classList.add("is-active");
+      mobileContainer.classList.add("is-open");
+      hideScrollContainer.forEach(function (val, idx) {
+        val.classList.add("is-hideScroll");
+      });
+    });
+    btnClose.forEach(function (val, id) {
+      val.addEventListener('click', function (ev) {
+        console.log("close");
+        btn.classList.remove("is-active");
+        mobileContainer.classList.remove("is-open");
+        mobileContainer.classList.add("is-animate");
+        hideScrollContainer.forEach(function (val, idx) {
+          return val.classList.remove("is-hideScroll");
+        });
+        setTimeout(function () {
+          mobileContainer.classList.remove("is-animate");
+        }, 300);
+      }, false);
+    });
+  };
+
+  var headerNavCollapse = function headerNavCollapse() {
+    var btnsItem = document.querySelectorAll('[header-item-js]');
+    btnsItem.forEach(function (val, id) {
+      val.addEventListener('click', function (ev) {
+        var el = ev.currentTarget,
+            elDropdown = el.nextElementSibling;
+
+        if (el.classList.contains('is-active')) {
+          el.classList.remove('is-active');
+          elDropdown.classList.remove('is-open');
+        } else {
+          el.classList.add('is-active');
+          elDropdown.classList.add('is-open');
+        }
+      }, false);
+    });
+  };
+
+  var init = function init() {
+    headerNavCollapse();
+    hamburgerToggle();
+  };
+
+  return {
+    init: init
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (HeaderCB);
 
 /***/ }),
 
@@ -184,9 +258,9 @@ var SwiperCB = function () {
         slidesPerView: 1,
         spaceBetween: 0,
         speed: 2000,
-        // autoplay: {
-        //   delay: 5000,
-        // },
+        autoplay: {
+          delay: 5000
+        },
         effect: "creative",
         creativeEffect: {
           prev: {
