@@ -7,7 +7,7 @@
 }
 
 /* line 21, src/scss/_utilities/_extend.scss */
-.main .swiper-slide img, .category__box-img {
+.category__box-img, .main .swiper-slide img {
   position: absolute;
   top: 0;
   left: 0;
@@ -549,6 +549,522 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
+/* line 3, src/scss/_components/common/_header.scss */
+.header {
+  z-index: 990;
+  position: sticky;
+  top: -55px;
+  left: 0;
+  width: 100%;
+}
+
+/* line 10, src/scss/_components/common/_header.scss */
+.header__container {
+  width: 100%;
+}
+
+/* line 13, src/scss/_components/common/_header.scss */
+.header__container-1 {
+  background-color: #190b1f;
+}
+
+/* line 17, src/scss/_components/common/_header.scss */
+.header__container-2 {
+  position: relative;
+  background-color: #000000;
+}
+
+/* line 24, src/scss/_components/common/_header.scss */
+.header__wrapper-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 50px;
+}
+
+/* line 30, src/scss/_components/common/_header.scss */
+.header__wrapper-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80px;
+}
+
+/* line 36, src/scss/_components/common/_header.scss */
+.header__wrapper-2 > div:nth-of-type(1), .header__wrapper-2 > div:nth-of-type(3) {
+  width: 100%;
+  max-width: 201px;
+}
+
+/* line 42, src/scss/_components/common/_header.scss */
+.header__wrapper-2 > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 53, src/scss/_components/common/_header.scss */
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* line 60, src/scss/_components/common/_header.scss */
+.header__contacts a,
+.header__contacts p {
+  color: #ffffff;
+}
+
+/* line 65, src/scss/_components/common/_header.scss */
+.header__contacts a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 69, src/scss/_components/common/_header.scss */
+.header__contacts a svg {
+  margin-right: 5px;
+}
+
+/* line 74, src/scss/_components/common/_header.scss */
+.header__contacts span {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+/* line 81, src/scss/_components/common/_header.scss */
+.header__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 81, src/scss/_components/common/_header.scss */
+  .header__social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* line 89, src/scss/_components/common/_header.scss */
+.header__social li:not(:last-of-type) {
+  margin-right: 7px;
+}
+
+/* line 94, src/scss/_components/common/_header.scss */
+.header__social a {
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 109, src/scss/_components/common/_header.scss */
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 115, src/scss/_components/common/_header.scss */
+.header__menu-container.header__menu-container--full .c-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 118, src/scss/_components/common/_header.scss */
+.header__menu-container.header__menu-container--full .c-grid > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 126, src/scss/_components/common/_header.scss */
+.header__menu-container.header__menu-container--full .header__menu-dropdown {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #fff;
+}
+
+/* line 133, src/scss/_components/common/_header.scss */
+.header__menu-container.header__menu-container--small {
+  position: relative;
+}
+
+/* line 136, src/scss/_components/common/_header.scss */
+.header__menu-container.header__menu-container--small .header__menu-dropdown {
+  width: 100%;
+  max-width: 290px;
+  min-width: 290px;
+}
+
+/* line 145, src/scss/_components/common/_header.scss */
+.header__menu-container:hover .header__menu-item {
+  background-color: #dadc56;
+  color: #000000;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 150, src/scss/_components/common/_header.scss */
+.header__menu-container:hover .header__menu-dropdown {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 159, src/scss/_components/common/_header.scss */
+.header__menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 85px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 172, src/scss/_components/common/_header.scss */
+.header__menu-item span + svg {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* line 179, src/scss/_components/common/_header.scss */
+.header__menu-dropdown {
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #000;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 192, src/scss/_components/common/_header.scss */
+.header__menu-dropdown a,
+.header__menu-dropdown button {
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  min-height: 40px;
+  padding: 5px 15px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 213, src/scss/_components/common/_header.scss */
+.header__menu-dropdown a span + svg,
+.header__menu-dropdown button span + svg {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* line 219, src/scss/_components/common/_header.scss */
+.header__menu-dropdown a:hover,
+.header__menu-dropdown button:hover {
+  background-color: #dadc56;
+  color: #000000;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 224, src/scss/_components/common/_header.scss */
+.header__menu-dropdown a:hover .header__menu-subdropdown,
+.header__menu-dropdown button:hover .header__menu-subdropdown {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 233, src/scss/_components/common/_header.scss */
+.header__menu-title {
+  padding: 0 15px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* line 241, src/scss/_components/common/_header.scss */
+.header__menu-subdropdown {
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 290px;
+  min-width: 290px;
+  background-color: #000;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 4, src/scss/_components/homepage/category.scss */
+.category__box {
+  outline: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 350px;
+}
+
+@media screen and (max-width: 1535px) {
+  /* line 4, src/scss/_components/homepage/category.scss */
+  .category__box {
+    height: 325px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 4, src/scss/_components/homepage/category.scss */
+  .category__box {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 4, src/scss/_components/homepage/category.scss */
+  .category__box {
+    height: 275px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 4, src/scss/_components/homepage/category.scss */
+  .category__box {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 4, src/scss/_components/homepage/category.scss */
+  .category__box {
+    height: 225px;
+  }
+}
+
+/* line 29, src/scss/_components/homepage/category.scss */
+.category__box:hover:after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 37, src/scss/_components/homepage/category.scss */
+.category__box.category__box-1:after {
+  background-color: #000;
+}
+
+/* line 40, src/scss/_components/homepage/category.scss */
+.category__box.category__box-2:after {
+  background-color: #dadc56;
+}
+
+/* line 43, src/scss/_components/homepage/category.scss */
+.category__box.category__box-3:after {
+  background-color: #dadc56;
+}
+
+/* line 46, src/scss/_components/homepage/category.scss */
+.category__box.category__box-4:after {
+  background-color: #000;
+}
+
+/* line 49, src/scss/_components/homepage/category.scss */
+.category__box.category__box-5:after {
+  background-color: #dadc56;
+}
+
+/* line 52, src/scss/_components/homepage/category.scss */
+.category__box:after {
+  content: '';
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 66, src/scss/_components/homepage/category.scss */
+.category__box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* line 70, src/scss/_components/homepage/category.scss */
+.category__box-wrapper > div {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 70, src/scss/_components/homepage/category.scss */
+  .category__box-wrapper > div {
+    width: 100%;
+  }
+}
+
+/* line 78, src/scss/_components/homepage/category.scss */
+.category__box-img {
+  z-index: 0;
+}
+
+/* line 83, src/scss/_components/homepage/category.scss */
+.category__box-content {
+  z-index: 5;
+  position: relative;
+}
+
+/* line 87, src/scss/_components/homepage/category.scss */
+.category__box-content h6 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 87, src/scss/_components/homepage/category.scss */
+  .category__box-content h6 {
+    font-size: 26px;
+  }
+}
+
 /* line 3, src/scss/_components/homepage/main.scss */
 .main {
   padding-bottom: 30px;
@@ -713,157 +1229,6 @@ picture {
   -webkit-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
-}
-
-/* line 4, src/scss/_components/homepage/category.scss */
-.category__box {
-  outline: none;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 350px;
-}
-
-@media screen and (max-width: 1535px) {
-  /* line 4, src/scss/_components/homepage/category.scss */
-  .category__box {
-    height: 325px;
-  }
-}
-
-@media screen and (max-width: 1439px) {
-  /* line 4, src/scss/_components/homepage/category.scss */
-  .category__box {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 1365px) {
-  /* line 4, src/scss/_components/homepage/category.scss */
-  .category__box {
-    height: 275px;
-  }
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 4, src/scss/_components/homepage/category.scss */
-  .category__box {
-    height: 250px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  /* line 4, src/scss/_components/homepage/category.scss */
-  .category__box {
-    height: 225px;
-  }
-}
-
-/* line 29, src/scss/_components/homepage/category.scss */
-.category__box:hover:after {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-/* line 37, src/scss/_components/homepage/category.scss */
-.category__box.category__box-1:after {
-  background-color: #000;
-}
-
-/* line 40, src/scss/_components/homepage/category.scss */
-.category__box.category__box-2:after {
-  background-color: #dadc56;
-}
-
-/* line 43, src/scss/_components/homepage/category.scss */
-.category__box.category__box-3:after {
-  background-color: #dadc56;
-}
-
-/* line 46, src/scss/_components/homepage/category.scss */
-.category__box.category__box-4:after {
-  background-color: #000;
-}
-
-/* line 49, src/scss/_components/homepage/category.scss */
-.category__box.category__box-5:after {
-  background-color: #dadc56;
-}
-
-/* line 52, src/scss/_components/homepage/category.scss */
-.category__box:after {
-  content: '';
-  z-index: 1;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-/* line 66, src/scss/_components/homepage/category.scss */
-.category__box-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-/* line 70, src/scss/_components/homepage/category.scss */
-.category__box-wrapper > div {
-  width: 50%;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 70, src/scss/_components/homepage/category.scss */
-  .category__box-wrapper > div {
-    width: 100%;
-  }
-}
-
-/* line 78, src/scss/_components/homepage/category.scss */
-.category__box-img {
-  z-index: 0;
-}
-
-/* line 83, src/scss/_components/homepage/category.scss */
-.category__box-content {
-  z-index: 5;
-  position: relative;
-}
-
-/* line 87, src/scss/_components/homepage/category.scss */
-.category__box-content h6 {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.5;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 87, src/scss/_components/homepage/category.scss */
-  .category__box-content h6 {
-    font-size: 26px;
-  }
 }
 
 /* line 3, src/scss/_components/homepage/skin.scss */

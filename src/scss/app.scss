@@ -25,9 +25,6 @@
 //@import "_macros/modal";
 
 /// COMPONENTS
-//@import "_components/common/header";
-@import "_components/common/footer";
+@import "_components/common/*.scss";
 
-@import "_components/homepage/main";
-@import "_components/homepage/category";
-@import "_components/homepage/skin";
+@import "_components/homepage/*.scss";

@@ -184,9 +184,9 @@ var SwiperCB = function () {
         slidesPerView: 1,
         spaceBetween: 0,
         speed: 2000,
-        autoplay: {
-          delay: 5000
-        },
+        // autoplay: {
+        //   delay: 5000,
+        // },
         effect: "creative",
         creativeEffect: {
           prev: {
