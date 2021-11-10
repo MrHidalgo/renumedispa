@@ -3,10 +3,10 @@ ProjectTitle: Renumedispa
 PageList:
 - file: index.html
   titleName: Home
-  ready: 1
-- file: about.html
-  titleName: About
+  ready: 90
+- file: services.html
+  titleName: Services
   ready: 1
 - file: contacts.html
   titleName: Contacts
-  ready: 1
+  ready: 90
