@@ -535,7 +535,7 @@ picture {
 /* line 60, src/scss/_components/common/_footer.scss */
 .footer__title {
   padding-bottom: 30px;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1.5;
   font-style: normal;
@@ -1664,6 +1664,7 @@ picture {
   font-weight: 700;
   color: #ffffff;
   font-style: italic;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (max-width: 1439px) {
@@ -1694,7 +1695,7 @@ picture {
   }
 }
 
-/* line 63, src/scss/_components/homepage/main.scss */
+/* line 64, src/scss/_components/homepage/main.scss */
 .main .swiper-slide.swiper-slide-active img {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
@@ -1705,7 +1706,7 @@ picture {
   transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
 }
 
-/* line 69, src/scss/_components/homepage/main.scss */
+/* line 70, src/scss/_components/homepage/main.scss */
 .main .swiper-slide img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
@@ -1716,7 +1717,7 @@ picture {
   transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
 }
 
-/* line 76, src/scss/_components/homepage/main.scss */
+/* line 77, src/scss/_components/homepage/main.scss */
 .main .swiper-pagination {
   z-index: 10;
   bottom: 15px;
@@ -1731,7 +1732,7 @@ picture {
           justify-content: center;
 }
 
-/* line 83, src/scss/_components/homepage/main.scss */
+/* line 84, src/scss/_components/homepage/main.scss */
 .main .swiper-pagination-bullet {
   width: 60px;
   height: 3px;
@@ -1744,7 +1745,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 92, src/scss/_components/homepage/main.scss */
+/* line 93, src/scss/_components/homepage/main.scss */
 .main .swiper-pagination-bullet-active {
   background-color: #cccccc;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -1818,4 +1819,352 @@ picture {
   .skin__desc {
     font-size: 14px;
   }
+}
+
+/* line 6, src/scss/_components/contacts/address.scss */
+.address__wrapper-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 6, src/scss/_components/contacts/address.scss */
+  .address__wrapper-1 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 14, src/scss/_components/contacts/address.scss */
+.address__wrapper-1 > div {
+  width: 100%;
+  max-width: calc(100% / 3);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 14, src/scss/_components/contacts/address.scss */
+  .address__wrapper-1 > div {
+    max-width: 100%;
+  }
+  /* line 20, src/scss/_components/contacts/address.scss */
+  .address__wrapper-1 > div:not(:last-of-type) {
+    padding-bottom: 40px;
+  }
+}
+
+/* line 27, src/scss/_components/contacts/address.scss */
+.address__wrapper-2 {
+  padding-bottom: 50px;
+}
+
+/* line 32, src/scss/_components/contacts/address.scss */
+.address__wrapper-3 iframe {
+  display: block;
+  max-width: 100%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 42, src/scss/_components/contacts/address.scss */
+.address__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 46, src/scss/_components/contacts/address.scss */
+.address__box div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background-color: #bbbf34;
+}
+
+/* line 58, src/scss/_components/contacts/address.scss */
+.address__box div svg {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* line 64, src/scss/_components/contacts/address.scss */
+.address__box p {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* line 68, src/scss/_components/contacts/address.scss */
+.address__box p a {
+  color: #bbbf34;
+  font-weight: 500;
+}
+
+/* line 75, src/scss/_components/contacts/address.scss */
+.address__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 79, src/scss/_components/contacts/address.scss */
+.address__form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 79, src/scss/_components/contacts/address.scss */
+  .address__form-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 86, src/scss/_components/contacts/address.scss */
+.address__form-group > div {
+  width: 100%;
+  max-width: calc((100% - 30px) / 3);
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 86, src/scss/_components/contacts/address.scss */
+  .address__form-group > div {
+    max-width: 100%;
+  }
+}
+
+/* line 95, src/scss/_components/contacts/address.scss */
+.address__form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* line 100, src/scss/_components/contacts/address.scss */
+.address__form-field.address__form-field--checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* line 104, src/scss/_components/contacts/address.scss */
+.address__form-field.address__form-field--checkbox > div {
+  width: 100%;
+  max-width: calc(100% / 3);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 104, src/scss/_components/contacts/address.scss */
+  .address__form-field.address__form-field--checkbox > div {
+    max-width: 100%;
+  }
+  /* line 110, src/scss/_components/contacts/address.scss */
+  .address__form-field.address__form-field--checkbox > div:not(:last-of-type) {
+    padding-bottom: 5px;
+  }
+}
+
+/* line 115, src/scss/_components/contacts/address.scss */
+.address__form-field.address__form-field--checkbox > div label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 120, src/scss/_components/contacts/address.scss */
+.address__form-field.address__form-field--checkbox > div label span {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+/* line 127, src/scss/_components/contacts/address.scss */
+.address__form-field.address__form-field--btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 131, src/scss/_components/contacts/address.scss */
+.address__form-field label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+/* line 137, src/scss/_components/contacts/address.scss */
+.address__form-field input[type='text'],
+.address__form-field input[type='email'],
+.address__form-field input[type='date'],
+.address__form-field input[type='tel'],
+.address__form-field input[type='number'],
+.address__form-field textarea {
+  outline: none;
+  position: relative;
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  border: 1px solid #d2d2d2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.address__form-field input[type='text'].placeholder,
+.address__form-field input[type='email'].placeholder,
+.address__form-field input[type='date'].placeholder,
+.address__form-field input[type='tel'].placeholder,
+.address__form-field input[type='number'].placeholder,
+.address__form-field textarea.placeholder {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.address__form-field input[type='text']:-moz-placeholder,
+.address__form-field input[type='email']:-moz-placeholder,
+.address__form-field input[type='date']:-moz-placeholder,
+.address__form-field input[type='tel']:-moz-placeholder,
+.address__form-field input[type='number']:-moz-placeholder,
+.address__form-field textarea:-moz-placeholder {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.address__form-field input[type='text']::-moz-placeholder,
+.address__form-field input[type='email']::-moz-placeholder,
+.address__form-field input[type='date']::-moz-placeholder,
+.address__form-field input[type='tel']::-moz-placeholder,
+.address__form-field input[type='number']::-moz-placeholder,
+.address__form-field textarea::-moz-placeholder {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.address__form-field input[type='text']:-ms-input-placeholder,
+.address__form-field input[type='email']:-ms-input-placeholder,
+.address__form-field input[type='date']:-ms-input-placeholder,
+.address__form-field input[type='tel']:-ms-input-placeholder,
+.address__form-field input[type='number']:-ms-input-placeholder,
+.address__form-field textarea:-ms-input-placeholder {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.address__form-field input[type='text']::-webkit-input-placeholder,
+.address__form-field input[type='email']::-webkit-input-placeholder,
+.address__form-field input[type='date']::-webkit-input-placeholder,
+.address__form-field input[type='tel']::-webkit-input-placeholder,
+.address__form-field input[type='number']::-webkit-input-placeholder,
+.address__form-field textarea::-webkit-input-placeholder {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* line 160, src/scss/_components/contacts/address.scss */
+.address__form-field textarea {
+  resize: none;
+  height: 100px;
+  padding: 15px;
+}
+
+/* line 166, src/scss/_components/contacts/address.scss */
+.address__form-field button {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 200px;
+  height: 45px;
+  border: 1px solid #b4b82f;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  background-color: #b4b82f;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 184, src/scss/_components/contacts/address.scss */
+.address__form-field button:hover {
+  background-color: transparent;
+  color: #b4b82f;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 191, src/scss/_components/contacts/address.scss */
+.address__form-field p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
 }

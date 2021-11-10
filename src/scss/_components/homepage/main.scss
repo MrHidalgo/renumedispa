@@ -45,6 +45,7 @@
 				font-weight: 700;
 				color: #ffffff;
 				font-style: italic;
+				text-shadow: 0 0 10px rgba(#000, 0.15);
 				@include adaptive(1439) {
 					font-size: 70px;
 				}
