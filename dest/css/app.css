@@ -1599,6 +1599,11 @@ picture {
 }
 
 /* line 9, src/scss/_components/homepage/main.scss */
+.main.main--procedure {
+  padding-bottom: 0;
+}
+
+/* line 13, src/scss/_components/homepage/main.scss */
 .main__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1607,27 +1612,27 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 9, src/scss/_components/homepage/main.scss */
+  /* line 13, src/scss/_components/homepage/main.scss */
   .main__wrapper {
     min-height: 550px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 9, src/scss/_components/homepage/main.scss */
+  /* line 13, src/scss/_components/homepage/main.scss */
   .main__wrapper {
     min-height: 450px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 9, src/scss/_components/homepage/main.scss */
+  /* line 13, src/scss/_components/homepage/main.scss */
   .main__wrapper {
     min-height: 275px;
   }
 }
 
-/* line 23, src/scss/_components/homepage/main.scss */
+/* line 27, src/scss/_components/homepage/main.scss */
 .main__slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1636,13 +1641,13 @@ picture {
   min-height: 100%;
 }
 
-/* line 29, src/scss/_components/homepage/main.scss */
+/* line 33, src/scss/_components/homepage/main.scss */
 .main .swiper {
   width: 100%;
   min-height: 100%;
 }
 
-/* line 33, src/scss/_components/homepage/main.scss */
+/* line 37, src/scss/_components/homepage/main.scss */
 .main .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1653,7 +1658,7 @@ picture {
   position: relative;
 }
 
-/* line 38, src/scss/_components/homepage/main.scss */
+/* line 42, src/scss/_components/homepage/main.scss */
 .main .swiper-slide h1 {
   z-index: 5;
   position: relative;
@@ -1668,34 +1673,34 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 38, src/scss/_components/homepage/main.scss */
+  /* line 42, src/scss/_components/homepage/main.scss */
   .main .swiper-slide h1 {
     font-size: 70px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 38, src/scss/_components/homepage/main.scss */
+  /* line 42, src/scss/_components/homepage/main.scss */
   .main .swiper-slide h1 {
     font-size: 60px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 38, src/scss/_components/homepage/main.scss */
+  /* line 42, src/scss/_components/homepage/main.scss */
   .main .swiper-slide h1 {
     font-size: 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 38, src/scss/_components/homepage/main.scss */
+  /* line 42, src/scss/_components/homepage/main.scss */
   .main .swiper-slide h1 {
     font-size: 35px;
   }
 }
 
-/* line 63, src/scss/_components/homepage/main.scss */
+/* line 67, src/scss/_components/homepage/main.scss */
 .main .swiper-slide p {
   z-index: 5;
   position: relative;
@@ -1712,14 +1717,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 63, src/scss/_components/homepage/main.scss */
+  /* line 67, src/scss/_components/homepage/main.scss */
   .main .swiper-slide p {
     width: 75%;
     font-size: 16px;
   }
 }
 
-/* line 83, src/scss/_components/homepage/main.scss */
+/* line 87, src/scss/_components/homepage/main.scss */
 .main .swiper-slide.swiper-slide-active img {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
@@ -1730,7 +1735,7 @@ picture {
   transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
 }
 
-/* line 89, src/scss/_components/homepage/main.scss */
+/* line 93, src/scss/_components/homepage/main.scss */
 .main .swiper-slide img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
@@ -1741,7 +1746,7 @@ picture {
   transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
 }
 
-/* line 96, src/scss/_components/homepage/main.scss */
+/* line 100, src/scss/_components/homepage/main.scss */
 .main .swiper-pagination {
   z-index: 10;
   bottom: 15px;
@@ -1756,7 +1761,7 @@ picture {
           justify-content: center;
 }
 
-/* line 103, src/scss/_components/homepage/main.scss */
+/* line 107, src/scss/_components/homepage/main.scss */
 .main .swiper-pagination-bullet {
   width: 60px;
   height: 3px;
@@ -1769,7 +1774,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 112, src/scss/_components/homepage/main.scss */
+/* line 116, src/scss/_components/homepage/main.scss */
 .main .swiper-pagination-bullet-active {
   background-color: #cccccc;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -2374,7 +2379,14 @@ picture {
   }
 }
 
-/* line 135, src/scss/_components/services/services.scss */
+/* line 134, src/scss/_components/services/services.scss */
+.services__block img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 141, src/scss/_components/services/services.scss */
 .services__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2389,7 +2401,7 @@ picture {
   background-color: #403f3f;
 }
 
-/* line 143, src/scss/_components/services/services.scss */
+/* line 149, src/scss/_components/services/services.scss */
 .services__box-wrapper {
   position: relative;
   left: -30px;
@@ -2401,7 +2413,7 @@ picture {
   width: calc(100% + 30px);
 }
 
-/* line 150, src/scss/_components/services/services.scss */
+/* line 156, src/scss/_components/services/services.scss */
 .services__box-wrapper > div {
   width: 100%;
   max-width: calc(100% / 3);
@@ -2410,27 +2422,27 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 150, src/scss/_components/services/services.scss */
+  /* line 156, src/scss/_components/services/services.scss */
   .services__box-wrapper > div {
     max-width: calc(100% / 2);
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 150, src/scss/_components/services/services.scss */
+  /* line 156, src/scss/_components/services/services.scss */
   .services__box-wrapper > div {
     max-width: 100%;
   }
 }
 
-/* line 164, src/scss/_components/services/services.scss */
+/* line 170, src/scss/_components/services/services.scss */
 .services__box-body {
   padding-top: 10px;
   margin-top: 10px;
   border-top: 1px solid #fff;
 }
 
-/* line 170, src/scss/_components/services/services.scss */
+/* line 176, src/scss/_components/services/services.scss */
 .services__box-title {
   padding-bottom: 15px;
   font-size: 19px;
@@ -2438,7 +2450,7 @@ picture {
   line-height: 2;
 }
 
-/* line 177, src/scss/_components/services/services.scss */
+/* line 183, src/scss/_components/services/services.scss */
 .services__box-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2452,7 +2464,7 @@ picture {
   margin-bottom: 10px;
 }
 
-/* line 185, src/scss/_components/services/services.scss */
+/* line 191, src/scss/_components/services/services.scss */
 .services__box-link p {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2473,20 +2485,168 @@ picture {
   color: #ffffff;
 }
 
-/* line 200, src/scss/_components/services/services.scss */
+/* line 206, src/scss/_components/services/services.scss */
 .services__box-desc {
   font-size: 16px;
   color: #ffffff;
   line-height: 2;
 }
 
-/* line 3, src/scss/_components/procedure/procedure.scss */
-.procedure {
-  padding-top: 20px;
+/* line 5, src/scss/_components/procedure/faq.scss */
+.faq__container-1 {
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
+/* line 9, src/scss/_components/procedure/faq.scss */
+.faq__container-2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #eae9e9;
+}
+
+/* line 16, src/scss/_components/procedure/faq.scss */
+.faq__title {
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 40px;
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 16, src/scss/_components/procedure/faq.scss */
+  .faq__title {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+/* line 28, src/scss/_components/procedure/faq.scss */
+.faq__collapse-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 32, src/scss/_components/procedure/faq.scss */
+.faq__collapse-wrapper > div {
+  border-bottom: 1px solid #e0dede;
+}
+
+/* line 37, src/scss/_components/procedure/faq.scss */
+.faq__collapse-head {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 55px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 47, src/scss/_components/procedure/faq.scss */
+.faq__collapse-head.is-active span:after {
+  opacity: 0;
+}
+
+/* line 53, src/scss/_components/procedure/faq.scss */
+.faq__collapse-head span {
+  position: relative;
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  background-color: #333333;
+}
+
+/* line 61, src/scss/_components/procedure/faq.scss */
+.faq__collapse-head span:before, .faq__collapse-head span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #ffffff;
+}
+
+/* line 71, src/scss/_components/procedure/faq.scss */
+.faq__collapse-head span:before {
+  width: 13px;
+  height: 2px;
+}
+
+/* line 76, src/scss/_components/procedure/faq.scss */
+.faq__collapse-head span:after {
+  width: 2px;
+  height: 13px;
+}
+
+/* line 82, src/scss/_components/procedure/faq.scss */
+.faq__collapse-head p {
+  color: #dadc56;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 82, src/scss/_components/procedure/faq.scss */
+  .faq__collapse-head p {
+    font-size: 18px;
+  }
+}
+
+/* line 92, src/scss/_components/procedure/faq.scss */
+.faq__collapse-body {
+  display: none;
+}
+
+/* line 95, src/scss/_components/procedure/faq.scss */
+.faq__collapse-body > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 99, src/scss/_components/procedure/faq.scss */
+.faq__collapse-body > div p {
+  padding-bottom: 10px;
+  color: #000000;
+  font-size: 16px;
+}
+
+/* line 108, src/scss/_components/procedure/faq.scss */
+.faq__info {
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+}
+
+/* line 113, src/scss/_components/procedure/faq.scss */
+.faq__info a {
+  color: #dadc56;
+}
+
+/* line 3, src/scss/_components/procedure/procedure.scss */
+.procedure {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #eae9e9;
+}
+
 /* line 10, src/scss/_components/procedure/procedure.scss */
+.procedure .services__title span {
+  background-color: #eae9e9;
+}
+
+/* line 19, src/scss/_components/procedure/procedure.scss */
 .procedure__block-wrapper > div:after {
   display: none !important;
 }

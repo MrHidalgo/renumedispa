@@ -6,6 +6,10 @@
 		padding-bottom: 15px;
 	}
 
+	&.main--procedure {
+		padding-bottom: 0;
+	}
+
 	&__wrapper {
 		display: flex;
 		min-height: 600px;

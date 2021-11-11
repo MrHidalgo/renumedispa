@@ -98,6 +98,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common/common */ "./src/js/common/common.js");
 /* harmony import */ var _macros_swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./macros/swiper */ "./src/js/macros/swiper.js");
 /* harmony import */ var _macros_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./macros/header */ "./src/js/macros/header.js");
+/* harmony import */ var _macros_collapse__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./macros/collapse */ "./src/js/macros/collapse.js");
+
 
 
  // EVENT LISTENER - LOAD
@@ -109,6 +111,7 @@ window.addEventListener('load', function (ev) {
 
   _macros_swiper__WEBPACK_IMPORTED_MODULE_1__["default"].init();
   _macros_header__WEBPACK_IMPORTED_MODULE_2__["default"].init();
+  _macros_collapse__WEBPACK_IMPORTED_MODULE_3__["default"].init();
 }, false); // EVENT LISTENER - SCROLL
 // ========================================
 
@@ -167,6 +170,43 @@ var Common = function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (Common);
+
+/***/ }),
+
+/***/ "./src/js/macros/collapse.js":
+/*!***********************************!*\
+  !*** ./src/js/macros/collapse.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var collapseCB = function () {
+  var init = function init() {
+    var collapseHead = document.querySelectorAll('.faq__collapse-head ');
+    collapseHead.forEach(function (val, id) {
+      val.addEventListener('click', function (ev) {
+        var el = ev.currentTarget,
+            bodyEl = el.nextElementSibling;
+
+        if (el.classList.contains('is-active')) {
+          el.classList.remove('is-active');
+          bodyEl.style.display = 'none';
+        } else {
+          el.classList.add('is-active');
+          bodyEl.style.display = 'block';
+        }
+      });
+    });
+  };
+
+  return {
+    init: init
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (collapseCB);
 
 /***/ }),
 

@@ -1,8 +1,17 @@
 // SECTION :: START
 
 .procedure {
-	padding-top: 20px;
+	padding-top: 50px;
 	padding-bottom: 50px;
+	background-color: #eae9e9;
+
+	.services {
+		&__title {
+			span {
+				background-color: #eae9e9;
+			}
+		}
+	}
 
 	&__block {
 		&-wrapper {
