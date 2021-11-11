@@ -6,7 +6,10 @@ PageList:
   ready: 90
 - file: services.html
   titleName: Services
-  ready: 1
+  ready: 90
+- file: procedure.html
+  titleName: Procedure
+  ready: 90
 - file: contacts.html
   titleName: Contacts
   ready: 90

@@ -2314,39 +2314,44 @@ picture {
 }
 
 /* line 90, src/scss/_components/services/services.scss */
+.services__block-wrapper-2 {
+  padding-top: 50px;
+}
+
+/* line 94, src/scss/_components/services/services.scss */
 .services__block-wrapper > div {
   width: 50%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 90, src/scss/_components/services/services.scss */
+  /* line 94, src/scss/_components/services/services.scss */
   .services__block-wrapper > div {
     width: 100%;
   }
-  /* line 95, src/scss/_components/services/services.scss */
+  /* line 99, src/scss/_components/services/services.scss */
   .services__block-wrapper > div:not(:last-of-type) {
     padding-bottom: 30px;
   }
 }
 
-/* line 100, src/scss/_components/services/services.scss */
+/* line 104, src/scss/_components/services/services.scss */
 .services__block-wrapper > div:nth-of-type(1) {
   position: relative;
   padding-right: 25px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 100, src/scss/_components/services/services.scss */
+  /* line 104, src/scss/_components/services/services.scss */
   .services__block-wrapper > div:nth-of-type(1) {
     padding-right: 0;
   }
-  /* line 106, src/scss/_components/services/services.scss */
+  /* line 110, src/scss/_components/services/services.scss */
   .services__block-wrapper > div:nth-of-type(1):after {
     display: none;
   }
 }
 
-/* line 111, src/scss/_components/services/services.scss */
+/* line 115, src/scss/_components/services/services.scss */
 .services__block-wrapper > div:nth-of-type(1):after {
   content: '';
   position: absolute;
@@ -2357,19 +2362,19 @@ picture {
   background-color: #000000;
 }
 
-/* line 121, src/scss/_components/services/services.scss */
+/* line 125, src/scss/_components/services/services.scss */
 .services__block-wrapper > div:nth-of-type(2) {
   padding-left: 25px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 121, src/scss/_components/services/services.scss */
+  /* line 125, src/scss/_components/services/services.scss */
   .services__block-wrapper > div:nth-of-type(2) {
     padding-left: 0;
   }
 }
 
-/* line 131, src/scss/_components/services/services.scss */
+/* line 135, src/scss/_components/services/services.scss */
 .services__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2384,7 +2389,7 @@ picture {
   background-color: #403f3f;
 }
 
-/* line 139, src/scss/_components/services/services.scss */
+/* line 143, src/scss/_components/services/services.scss */
 .services__box-wrapper {
   position: relative;
   left: -30px;
@@ -2396,7 +2401,7 @@ picture {
   width: calc(100% + 30px);
 }
 
-/* line 146, src/scss/_components/services/services.scss */
+/* line 150, src/scss/_components/services/services.scss */
 .services__box-wrapper > div {
   width: 100%;
   max-width: calc(100% / 3);
@@ -2405,27 +2410,27 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 146, src/scss/_components/services/services.scss */
+  /* line 150, src/scss/_components/services/services.scss */
   .services__box-wrapper > div {
     max-width: calc(100% / 2);
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 146, src/scss/_components/services/services.scss */
+  /* line 150, src/scss/_components/services/services.scss */
   .services__box-wrapper > div {
     max-width: 100%;
   }
 }
 
-/* line 160, src/scss/_components/services/services.scss */
+/* line 164, src/scss/_components/services/services.scss */
 .services__box-body {
   padding-top: 10px;
   margin-top: 10px;
   border-top: 1px solid #fff;
 }
 
-/* line 166, src/scss/_components/services/services.scss */
+/* line 170, src/scss/_components/services/services.scss */
 .services__box-title {
   padding-bottom: 15px;
   font-size: 19px;
@@ -2433,7 +2438,7 @@ picture {
   line-height: 2;
 }
 
-/* line 173, src/scss/_components/services/services.scss */
+/* line 177, src/scss/_components/services/services.scss */
 .services__box-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2447,7 +2452,7 @@ picture {
   margin-bottom: 10px;
 }
 
-/* line 181, src/scss/_components/services/services.scss */
+/* line 185, src/scss/_components/services/services.scss */
 .services__box-link p {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2468,9 +2473,20 @@ picture {
   color: #ffffff;
 }
 
-/* line 196, src/scss/_components/services/services.scss */
+/* line 200, src/scss/_components/services/services.scss */
 .services__box-desc {
   font-size: 16px;
   color: #ffffff;
   line-height: 2;
+}
+
+/* line 3, src/scss/_components/procedure/procedure.scss */
+.procedure {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+/* line 10, src/scss/_components/procedure/procedure.scss */
+.procedure__block-wrapper > div:after {
+  display: none !important;
 }

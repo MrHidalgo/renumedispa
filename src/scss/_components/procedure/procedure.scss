@@ -1,0 +1,18 @@
+// SECTION :: START
+
+.procedure {
+	padding-top: 20px;
+	padding-bottom: 50px;
+
+	&__block {
+		&-wrapper {
+			> div {
+				&:after {
+					display: none !important;
+				}
+			}
+		}
+	}
+}
+
+// SECTION :: END
