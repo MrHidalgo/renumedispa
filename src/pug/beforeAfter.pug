@@ -1,0 +1,12 @@
+---
+title: Renumedispa | Before After
+
+pageClassName: p-beforeAfter
+---
+extends shared/_layout
+
+block content
+  div.body(class!= pageClassName)
+
+    include components/beforeAfter/main
+    include components/beforeAfter/beforeAfter

@@ -371,13 +371,24 @@ picture {
   display: flex;
 }
 
-/* line 6, src/scss/_shared/_common.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_shared/_common.scss */
+  .copyright {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
+/* line 11, src/scss/_shared/_common.scss */
 .copyright__text {
   font-size: 14px;
   color: #ffffff;
 }
 
-/* line 13, src/scss/_shared/_common.scss */
+/* line 18, src/scss/_shared/_common.scss */
 .made__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,7 +400,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 19, src/scss/_shared/_common.scss */
+/* line 24, src/scss/_shared/_common.scss */
 .made__link:hover {
   color: #dadc56;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2649,4 +2660,94 @@ picture {
 /* line 19, src/scss/_components/procedure/procedure.scss */
 .procedure__block-wrapper > div:after {
   display: none !important;
+}
+
+/* line 3, src/scss/_components/beforeAfter/beforeAfter.scss */
+.beforeAfter {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 8, src/scss/_components/beforeAfter/beforeAfter.scss */
+.beforeAfter__wrapper-1 {
+  padding-bottom: 50px;
+}
+
+/* line 12, src/scss/_components/beforeAfter/beforeAfter.scss */
+.beforeAfter__wrapper-3 {
+  padding-top: 20px;
+}
+
+/* line 15, src/scss/_components/beforeAfter/beforeAfter.scss */
+.beforeAfter__wrapper-3 p {
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+}
+
+/* line 20, src/scss/_components/beforeAfter/beforeAfter.scss */
+.beforeAfter__wrapper-3 p a {
+  color: #dadc56;
+}
+
+/* line 27, src/scss/_components/beforeAfter/beforeAfter.scss */
+.beforeAfter__content {
+  padding-bottom: 30px;
+}
+
+/* line 31, src/scss/_components/beforeAfter/beforeAfter.scss */
+.beforeAfter__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 36, src/scss/_components/beforeAfter/beforeAfter.scss */
+.beforeAfter__box-wrapper {
+  position: relative;
+  left: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(100% + 30px);
+}
+
+/* line 43, src/scss/_components/beforeAfter/beforeAfter.scss */
+.beforeAfter__box-wrapper > div {
+  width: 100%;
+  max-width: calc(100% / 3);
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 43, src/scss/_components/beforeAfter/beforeAfter.scss */
+  .beforeAfter__box-wrapper > div {
+    max-width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 43, src/scss/_components/beforeAfter/beforeAfter.scss */
+  .beforeAfter__box-wrapper > div {
+    max-width: 100%;
+  }
+}
+
+/* line 57, src/scss/_components/beforeAfter/beforeAfter.scss */
+.beforeAfter__box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
 }

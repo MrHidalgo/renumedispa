@@ -10,6 +10,9 @@ PageList:
 - file: procedure.html
   titleName: Procedure
   ready: 90
+- file: beforeAfter.html
+  titleName: Before After
+  ready: 90
 - file: contacts.html
   titleName: Contacts
   ready: 90
