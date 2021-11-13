@@ -2562,12 +2562,28 @@ picture {
   padding-bottom: 5px;
 }
 
-/* line 47, src/scss/_components/procedure/faq.scss */
+/* line 46, src/scss/_components/procedure/faq.scss */
+.faq__collapse-head:hover span {
+  background-color: #b7bd37;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 50, src/scss/_components/procedure/faq.scss */
+.faq__collapse-head:hover p {
+  color: #b7bd37;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 58, src/scss/_components/procedure/faq.scss */
 .faq__collapse-head.is-active span:after {
   opacity: 0;
 }
 
-/* line 53, src/scss/_components/procedure/faq.scss */
+/* line 64, src/scss/_components/procedure/faq.scss */
 .faq__collapse-head span {
   position: relative;
   width: 25px;
@@ -2575,9 +2591,12 @@ picture {
   height: 25px;
   margin-right: 20px;
   background-color: #333333;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* line 61, src/scss/_components/procedure/faq.scss */
+/* line 73, src/scss/_components/procedure/faq.scss */
 .faq__collapse-head span:before, .faq__collapse-head span:after {
   content: '';
   position: absolute;
@@ -2589,58 +2608,61 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 71, src/scss/_components/procedure/faq.scss */
+/* line 83, src/scss/_components/procedure/faq.scss */
 .faq__collapse-head span:before {
   width: 13px;
   height: 2px;
 }
 
-/* line 76, src/scss/_components/procedure/faq.scss */
+/* line 88, src/scss/_components/procedure/faq.scss */
 .faq__collapse-head span:after {
   width: 2px;
   height: 13px;
 }
 
-/* line 82, src/scss/_components/procedure/faq.scss */
+/* line 94, src/scss/_components/procedure/faq.scss */
 .faq__collapse-head p {
   color: #dadc56;
   line-height: 1.5;
   font-size: 20px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 82, src/scss/_components/procedure/faq.scss */
+  /* line 94, src/scss/_components/procedure/faq.scss */
   .faq__collapse-head p {
     font-size: 18px;
   }
 }
 
-/* line 92, src/scss/_components/procedure/faq.scss */
+/* line 105, src/scss/_components/procedure/faq.scss */
 .faq__collapse-body {
   display: none;
 }
 
-/* line 95, src/scss/_components/procedure/faq.scss */
+/* line 108, src/scss/_components/procedure/faq.scss */
 .faq__collapse-body > div {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 99, src/scss/_components/procedure/faq.scss */
+/* line 112, src/scss/_components/procedure/faq.scss */
 .faq__collapse-body > div p {
   padding-bottom: 10px;
   color: #000000;
   font-size: 16px;
 }
 
-/* line 108, src/scss/_components/procedure/faq.scss */
+/* line 121, src/scss/_components/procedure/faq.scss */
 .faq__info {
   text-align: center;
   font-size: 18px;
   color: #000000;
 }
 
-/* line 113, src/scss/_components/procedure/faq.scss */
+/* line 126, src/scss/_components/procedure/faq.scss */
 .faq__info a {
   color: #dadc56;
 }

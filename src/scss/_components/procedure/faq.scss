@@ -42,6 +42,17 @@
 			padding-top: 5px;
 			padding-bottom: 5px;
 
+			&:hover {
+				span {
+					background-color: #b7bd37;
+					@include transition(background-color);
+				}
+				p {
+					color: #b7bd37;
+					@include transition(color);
+				}
+			}
+
 			&.is-active {
 				span {
 					&:after {
@@ -57,6 +68,7 @@
 				height: 25px;
 				margin-right: 20px;
 				background-color: #333333;
+				@include transition(background-color);
 
 				&:before,
 				&:after {
@@ -83,6 +95,7 @@
 				color: #dadc56;
 				line-height: 1.5;
 				font-size: 20px;
+				@include transition(color);
 				@include adaptive(767) {
 					font-size: 18px;
 				}
